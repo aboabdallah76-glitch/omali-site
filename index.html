@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتب أم علي للملابس | جملة وقطاعي</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:20px;font-family:Tahoma,Arial,sans-serif;background:#080808;color:#f5e6c8;text-align:center}
+.container{max-width:480px;margin:auto}
+.logo{width:220px;height:220px;object-fit:cover;border-radius:50%;border:4px solid #d4af37;box-shadow:0 0 25px #d4af3755;margin-top:15px}
+h1{color:#d4af37;font-size:28px;margin-bottom:5px}
+.subtitle{font-size:18px;color:#fff}
+.slogan{color:#d4af37;font-size:17px;margin-bottom:30px}
+.section{background:#161616;border:1px solid #96752d;border-radius:18px;padding:18px;margin:20px 0}
+h2{color:#d4af37;font-size:21px}
+.btn{display:block;padding:15px;margin:12px 0;border-radius:12px;text-decoration:none;color:white;font-size:18px;font-weight:bold;border:none;width:100%;cursor:pointer}
+.facebook{background:#1877f2}
+.whatsapp{background:#128c7e}
+.instapay{background:#7025a0}
+.phone{background:#30291d;border:1px solid #d4af37}
+.cash{background:#c71928}
+.address{line-height:2;font-size:17px}
+footer{color:#bfa76f;font-size:14px;margin:35px 0}
+#message{display:none;position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#d4af37;color:#000;padding:12px 25px;border-radius:10px;font-weight:bold;z-index:10}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="logo.jpg" alt="مكتب أم علي للملابس" class="logo">
+  <h1>👑 مكتب أم علي للملابس 👑</h1>
+  <div class="subtitle">جملة وقطاعي</div>
+  <p class="slogan">❤️ أناقتك تبدأ من هنا ❤️</p>
+
+  <div class="section">
+    <h2>🛍️ تابع أحدث موديلاتنا</h2>
+    <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100063877279346" target="_blank">🔵 صفحتنا على فيسبوك</a>
+    <a class="btn whatsapp" href="https://chat.whatsapp.com/B8jcPdh7LZm5DtRIbAi6Ab" target="_blank">🟢 انضم لجروب الواتساب</a>
+  </div>
+
+  <div class="section">
+    <h2>💳 طرق الدفع</h2>
+    <a class="btn instapay" href="https://ipn.eg/S/omali12345/instapay/4JhrPL" target="_blank">💜 الدفع عن طريق إنستاباي</a>
+    <h2>🔴 فودافون كاش</h2>
+    <button class="btn cash" onclick="copyNumber('01064627718')">01064627718 📋 نسخ</button>
+    <button class="btn cash" onclick="copyNumber('01001128649')">01001128649 📋 نسخ</button>
+    <p>اضغط على الرقم لنسخه</p>
+  </div>
+
+  <div class="section">
+    <h2>☎️ اتصل بنا</h2>
+    <a class="btn phone" href="tel:01030900189">📞 01030900189</a>
+    <a class="btn phone" href="tel:01282343287">📞 01282343287</a>
+  </div>
+
+  <div class="section">
+    <h2>📍 عنوان المحل</h2>
+    <div class="address">السويس – السلام واحد<br>عند بوابة الجامعة الجانبية<br>تخش مابين كوكب الشرق والدمياطي<br>تاني شارع على إيدك اليمين<br>بجوار المصرية لتجهيز المحلات التجارية</div>
+  </div>
+  <footer>👑 مكتب أم علي للملابس 👑<br>أحدث الموديلات بأفضل الأسعار<br>شحن لجميع المحافظات 🚚</footer>
+</div>
+<div id="message">تم نسخ الرقم ✅</div>
+<script>
+async function copyNumber(n){try{await navigator.clipboard.writeText(n);let m=document.getElementById("message");m.style.display="block";setTimeout(()=>m.style.display="none",2000)}catch(e){alert("انسخ الرقم: "+n)}}
+</script>
+</body>
+</html>
